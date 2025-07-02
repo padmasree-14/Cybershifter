@@ -19,6 +19,9 @@ Base64 API(btoa, atob): Built-in JavaScript methods for encoding/decoding
 ##Contributors
 
 Padmasree K K
+
 Sathya S
+
 Reshma S
+
 Deetchanya S
