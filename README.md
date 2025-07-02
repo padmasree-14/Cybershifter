@@ -5,15 +5,21 @@ Cyber Shifter is a web-based hacker-themed puzzle game built using HTML, CSS, an
 ###Game Structure
 
 HTML:Fix nesting or missing tags
+
 Logic Mask:correct logical and loop syntax
+
 Decoder Mask:Decode base64, hex, binary
+
 Regex Mask:Validate usernames
 
 ###Tech Stack
 
 HTML5: Structure and layout of the game interface.
+
 CSS3: Hacker-themed styling and visual effects.
+
 Vanilla javaScript: Game logic, dynamic interaction, puzzle generation, and input handling
+
 Base64 API(btoa, atob): Built-in JavaScript methods for encoding/decoding
 
 ###Contributors
