@@ -1,0 +1,57 @@
+body {
+  font-family: monospace;
+  background-color: #0d0d0d;
+  color: #00ffcc;
+  padding: 20px;
+}
+h1, .story {
+  text-align: center;
+  color: #00ffff;
+}
+.mask-controls button {
+  background: black;
+  color: #00ffcc;
+  border: 1px solid #00ffcc;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+.mask-controls button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.mask {
+  border: 1px solid #00ffcc;
+  padding: 20px;
+  margin-top: 20px;
+  display: none;
+}
+.mask input {
+  padding: 8px;
+  width: 80%;
+  margin: 10px 0;
+  border: 1px solid #00ffcc;
+  background: black;
+  color: #00ffcc;
+}
+.mask button {
+  padding: 10px;
+  background: #003333;
+  color: #00ffcc;
+  border: none;
+}
+.mask.active {
+  display: block;
+}
+.tool {
+  display: none;
+  margin-top: 20px;
+}
+textarea {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  color: #00ffcc;
+  border: 1px solid #00ffcc;
+  padding: 10px;
+}

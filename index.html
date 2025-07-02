@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cyber Shifter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Cyber Shifter:The Masked Hacker</h1>
+  <div class="story">
+    <p>You are <strong>Agent Zero</strong>, a rogue hacker in a system gone haywire.</p>
+    <p>To restore balance, decode all masks and unlock your hidden tools.</p>
+  </div>
+
+  <div class="mask-controls">
+    <button data-mask="html" onclick="switchMask('html')">HTML Mask</button>
+    <button data-mask="logic" onclick="switchMask('logic')">Logic Mask</button>
+    <button data-mask="decoder" onclick="switchMask('decoder')">Decoder Mask</button>
+    <button data-mask="regex" onclick="switchMask('regex')">Regex Mask</button>
+  </div>
+
+  <div id="puzzle-area">
+    <div id="html-mask" class="mask">
+      <p></p>
+      <input type="text" id="html-answer" placeholder="Enter correct fix" />
+      <button onclick="checkAnswer('html')">Submit</button>
+    </div>
+
+    <div id="logic-mask" class="mask">
+      <p></p>
+      <input type="text" id="logic-answer" placeholder="Enter fix" />
+      <button onclick="checkAnswer('logic')">Submit</button>
+    </div>
+
+    <div id="decoder-mask" class="mask">
+      <p></p>
+      <input type="text" id="decoder-answer" placeholder="Decoded text" />
+      <button onclick="checkAnswer('decoder')">Submit</button>
+    </div>
+
+    <div id="regex-mask" class="mask">
+      <p></p>
+      <input type="text" id="regex-answer" placeholder="Enter valid entries" />
+      <button onclick="checkAnswer('regex')">Submit</button>
+    </div>
+  </div>
+
+  <div id="tools" class="tool">
+    <h2>Cyber Tools Unlocked</h2>
+    <p><strong>Base64 Decoder:</strong></p>
+    <textarea id="base64Input" placeholder="Enter base64..."></textarea>
+    <button onclick="decodeBase64()">Decode</button>
+    <p><strong>Output:</strong></p>
+    <textarea id="decodedOutput" readonly></textarea>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
